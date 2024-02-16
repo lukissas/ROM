@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuentas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="fondoindex">
+    <header>
+        <div class="header_top">
+            <img src="img/logo ROM.png" alt="">
+            <nav>
+                <ul>
+                    <li><a class="redcolor" href="index.html">INICIO</a></li>
+                    <li><a class="redcolor" href="Acercade.html">GRAFOLOGÍA</a></li>
+                    <li><a class="redcolor" href="servicios.html">SERVICIOS</a></li>
+                    <li><a class="redcolor" href="contacto.html">CONTACTO</a></li>
+                    <li><a class="redcolor" href="fotos-videos.html">FOTOS</a></li>
+                    <li><a class="redcolor" href="cuentas.html">CUENTAS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cuentas">
+        <h3>CVU y ALIAS para Pago</h3>
+        <div class="cuenta">
+            <h3>CVU:</h3>
+            <p>293047823472</p>
+            <button onclick="copiarCVU()">Copiar CVU</button>
+        </div>
+        <div class="cuenta">
+            <h3>ALIAS:</h3>
+            <p>anashe.mp</p>
+            <button onclick="copiarALIAS()">Copiar ALIAS</button>
+        </div>
+    </section>
+
+    <script>
+        function copiarCVU() {
+            var cvu = "Tu CVU va aquí..."; // Reemplaza con tu CVU
+            navigator.clipboard.writeText(cvu).then(function() {
+            }, function(err) {
+                console.error('Error al copiar CVU: ', err);
+            });
+        }
+
+        function copiarALIAS() {
+            var alias = "Tu ALIAS va aquí..."; // Reemplaza con tu ALIAS
+            navigator.clipboard.writeText(alias).then(function() {
+            }, function(err) {
+                console.error('Error al copiar ALIAS: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
